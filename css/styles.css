@@ -115,15 +115,15 @@ body {
 /* MESSAGES */
 
 .messages {
-  padding-top: 90px;
-  padding-bottom: 75px;
+  flex-grow: 1;
+  overflow-y: auto;
   background-image: url("../img/bg-chat.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .message {
-  max-width: 60%;
+  max-width: 70%;
 }
 
 .message__content {
@@ -182,4 +182,12 @@ body {
 
 .message--me {
   align-self: flex-end;
+}
+
+.message--me .message__content {
+  background-color: #eeffde;
+}
+
+.message__photo {
+  object-fit: cover;
 }

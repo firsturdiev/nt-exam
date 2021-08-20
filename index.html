@@ -364,11 +364,10 @@
       </div>
     </section>
 
-    <section class="main col-6 border-right p-0 position-relative">
+    <section class="main col-6 border-right p-0 position-relative d-flex flex-column">
       <h2 class="sr-only">main</h2>
 
-      <header
-        class="main__header d-flex justify-content-between align-items-center p-3 border-bottom position-absolute w-100 bg-white">
+      <header class="main__header d-flex justify-content-between align-items-center p-3 border-bottom bg-white">
         <div>
           <h3 class="main__title h5 mb-1 text-truncate">Frontend Bootcamp N1 |09:00| #nt044</h3>
           <span class="text-secondary">21 members</span>
@@ -383,19 +382,8 @@
         </div>
       </header>
 
-      <form class="main__bottom d-flex align-items-center position-absolute w-100 p-3 bg-white" method="POST"
-        action="https://echo.htmlacademy.ru" autocomplete="off">
-        <button class="main__details-btn main__details-btn--attach btn mr-2" type="button"
-          aria-label="attach file"></button>
-        <input class="main__bottom-field form-control border-0 flex-grow-1" type="text" name="message"
-          alt="Type a message" placeholder="Write a message..." a required>
-        <button class="main__details-btn main__details-btn--sticker btn mr-2" type="button"
-          aria-label="Open sticker"></button>
-        <button class="main__details-btn main__details-btn--voice btn" type="button" aria-label="Record voice"></button>
-      </form>
 
-
-      <div class="messages h-100 px-2 d-flex flex-column align-items-lg-center">
+      <div class="messages px-2 d-flex flex-column align-items-lg-center">
         <span class="messages__badge badge badge-pill text-white p-2 mb-2">August 20</span>
 
         <div class="message message--you d-flex align-items-end mb-3">
@@ -469,23 +457,26 @@
           </div>
         </div>
 
-
         <div class="message message--me d-flex align-items-end mb-3">
-          <a href="#">
-            <img class="message__avatar rounded-circle mr-3" src="./img/avatar-muhammadjavohir.jpg" width="40"
-              height="40" alt="Avatar photo">
-          </a>
-          <div class="message__content bg-white rounded-lg p-2 pb-4">
-            <span class="message__author text-success">Muhammadjavohir Sur'atov</span>
-            <div class="message__reply mt-1 mb-2">
-              <span class="message__reply-title message__author text-danger">Abdulloh</span>
-              <div class="message__reply-text">Shaxsiyligiga yuborib qo'ydim</div>
-            </div>
-            <p class="m-0">Rahmat 👍</p>
-            <span class="message__time text-secondary">09:36</span>
+          <div class="message__content rounded-lg p-2 pb-4">
+            <img class="message__photo w-100 mb-1" src="./img/thumb-1.jpg" height="340" alt="Thumb photo">
+            <p class="m-0">Ustoz, shu qismini ham qilish kerakmi?</p>
+            <span class="message__time text-secondary">09:46</span>
           </div>
         </div>
       </div>
+
+
+      <form class="main__bottom d-flex align-items-center p-3 bg-white" method="POST"
+        action="https://echo.htmlacademy.ru" autocomplete="off">
+        <button class="main__details-btn main__details-btn--attach btn mr-2" type="button"
+          aria-label="attach file"></button>
+        <input class="main__bottom-field form-control border-0 flex-grow-1" type="text" name="message"
+          alt="Type a message" placeholder="Write a message..." a required>
+        <button class="main__details-btn main__details-btn--sticker btn mr-2" type="button"
+          aria-label="Open sticker"></button>
+        <button class="main__details-btn main__details-btn--voice btn" type="button" aria-label="Record voice"></button>
+      </form>
     </section>
   </main>
 
